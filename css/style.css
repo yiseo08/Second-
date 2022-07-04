@@ -35,3 +35,38 @@ body {
     justify-content: space-between;
     padding: 1em;
 }
+.task-done {
+    text-decoration: line-through;
+    background-color: lightgray;
+    transition: 1s;
+}
+.task-tabs > div {
+    cursor: pointer;
+}
+.button-box {
+    display: flex;
+}
+.button-box button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: #fff;
+    transition: 1s;
+    font-size: 30px;
+}
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+}
+.button-box button:nth-child(2):hover {
+    background-color: rgb(255, green, 0.3);
+}
+.fa-check {
+    color: lime;
+}
+.fa-rotate-left {
+    color: lightgray;
+}
+.fa-trash-can {
+    color: red;
+}
