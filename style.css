@@ -33,11 +33,44 @@ body {
 .task {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
 }
 .task-done {
     text-decoration: line-through;
+    background-color: lightgray;
+    transition: 1s;
 }
 .task-tabs > div {
     cursor: pointer;
+}
+.button-box {
+    display: flex;
+}
+.button-box button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: #fff;
+    transition: 1s;
+    font-size: 20px;
+}
+.button-box button:first-child:hover {
+    background-color: greenyellow;
+}
+.button-box button:nth-child(2):hover {
+    background-color: rgb(255, green, 0.3);
+}
+.fa-check {
+    color: limegreen;
+}
+.fa-rotate-left {
+    color: lightslategray;
+}
+.fa-trash-can {
+    color: red;
+}
+.task span {
+    padding: 1em;
 }
