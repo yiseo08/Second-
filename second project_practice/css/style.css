@@ -1,0 +1,41 @@
+@charset "utf-8";
+body {
+    margin: 0; /* 기본적으로 들어간 마진값을 없앰 */
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.task-area {
+    border: 1px solid lightgrey;
+}
+.task-tabs {
+    display: flex;
+    border-bottom: 1px solid lightgrey;
+    position: relative;
+}
+.task-tabs div {
+    padding: 1em;
+}
+#under-line {
+    position: absolute;
+    width: 60px;
+    left: 0;
+    top: 52px;
+    padding: 0;
+    height: 4px;
+    background-color: lightpink;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+}
+.task-done {
+    text-decoration: line-through;
+}
